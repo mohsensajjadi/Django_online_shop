@@ -5,9 +5,10 @@
 {% block page_title %}LogIn{% endblock %}
 
 {% block content %}
+    <h1>Log In</h1>
+    <h2>Are you sure you want to logout?</h2>
     <form action="" method="post">
         {% csrf_token %}
-        {{ form|crispy}}
-        <input class="mt-3" type="submit" value="LogIn">
+        <input class="mt-3" type="submit" value="Are you sure?">
     </form>
 {% endblock %}
