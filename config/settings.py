@@ -43,15 +43,17 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # local apps
+    'accounts.apps.AccountsConfig',    # 'accounts',
+    'pages.apps.PagesConfig',    # 'pages',
+    'products.apps.ProductsConfig',    # 'products',
+
     # third party apps
     'crispy_forms',
     'allauth',
     'allauth.account',
-
-    # local apps
-    'accounts',
-    'pages',
 ]
+
 
 SITE_ID = 1
 
